@@ -6,7 +6,7 @@ from discord import Intents
 load_dotenv()
 TOKEN = os.getenv('DISCORD_TOKEN')
 
-client = Bot(command_prefix='?', intents=Intents.all())
+client = Bot(command_prefix='!', intents=Intents.all())
 
 for cog in os.listdir('modules'):
     if not cog.endswith('.py'):
